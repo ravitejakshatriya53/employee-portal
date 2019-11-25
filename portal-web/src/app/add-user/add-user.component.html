@@ -1,0 +1,49 @@
+<div class="card" style="background: transparent;align-content: center;position: absolute;left: 30%;"> 
+<div class="card-body" style=" width: 35em;border: transparent;color: beige; ">
+  <label>Registration Form</label>
+<form [formGroup]="employeeForm" (ngSubmit)="onSubmit(employeeForm.value)">
+      <div class="form-group">
+        <label for="firstname">
+          First Name
+        </label>
+        <input class="form-control" id="firstname" type="text" formControlName="firstName" placeholder="First Name">
+      </div>
+    
+      <div class="form-group">
+          <label for="lastname">
+            Last Name
+          </label>
+          <input class="form-control" id="lastname" type="text" formControlName="lastName" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="gender">
+              Gender
+            </label>
+            <select class="form-control" id="gender" type="select" formControlName="gender" placeholder="select">
+              <option value="male"> Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+              <label for="Date of Birth">
+                Date Of Birth
+              </label>
+              <input class="form-control" id="firstname" type="date" formControlName="dateOfBirth" placeholder="Date Of Birth">
+            </div>
+      <div class="form-group">
+        <label for="address">
+          Address
+        </label>
+        <input class="form-control" id="address" type="text" formControlName="address" placeholder="Address">
+      </div>
+      <div class="form-group">
+        <label for="department">
+          Department
+        </label>
+        <input class="form-control" id="department" type="text" formControlName="department" placeholder="Department">
+      </div>
+      <button class="btn btn-primary" type="submit"style="float: left;Position: absolute; left: 35%">Submit</button>
+      <button class="btn btn-danger" type="reset" style="float: left;Position: absolute; left: 50%">Cancel</button>
+</form>
+</div>
+</div>
